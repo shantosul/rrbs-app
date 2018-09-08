@@ -1,0 +1,26 @@
+.signinpage {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    background: rgba(0, 124, 194, 0.55) !important;
+    background: -webkit-linear-gradient(-45deg, rgba(68, 199, 244, 1) 0%, rgba(0, 124, 194, 1) 100%) !important;
+    background: -o-linear-gradient(-45deg, rgba(68, 199, 244, 1) 0%, rgba(0, 124, 194, 1) 100%) !important;
+    background: -moz-linear-gradient(-45deg, rgba(68, 199, 244, 1) 0%, rgba(0, 124, 194, 1) 100%) !important;
+    background: linear-gradient(-45deg, rgba(68, 199, 244, 1) 0%, rgba(0, 124, 194, 1) 100%) !important;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999999;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("./../src/assets/images/loginbg.jpg"); */
+    /* background: linear-gradient(rgba(68,  199,  244, .7), rgba(0, 124, 194, .7)), url("./../src/assets/images/loginbg.jpg");
+  background-repeat:  no-repeat;
+  background-size:  cover;
+  background-position:  50% 50%; */
+}
