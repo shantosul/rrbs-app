@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 
-import Spinner from './components/spinner/spinner.js';
+import Spinner from './components/spinner/spinner';
 
 import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -15,14 +14,14 @@ class App extends Component {
   }
 
   componentDidMount() {
-    setTimeout(() => this.setState({ loading: false }), 1500);
+    setTimeout(() => this.setState({ loading: false }), 1000);
   }
 
   render() {
     const { loading } = this.state;
     return (
       loading ?
-      <Spinner />
+      <Spinner/>
       :
       <div className="App">
         <header className="App-header">
