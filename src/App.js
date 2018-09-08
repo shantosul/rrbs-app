@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import Spinner from './components/spinner/spinner';
+import Spinner from './components/spinner/spinner.js';
 
 import logo from './logo.svg';
 import './App.css';
