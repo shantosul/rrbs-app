@@ -2,8 +2,14 @@ import React, { Component } from 'react';
 
 import Spinner from './components/spinner/spinner';
 
-import logo from './logo.svg';
-import './App.css';
+import { Router, Route } from 'react-router-dom';
+import createHistory from 'history/createBrowserHistory';
+
+import Homepage from './components/pages/home';
+import Signin from './components/pages/login';
+import Signup from './components/pages/register';
+
+const history = createHistory();
 
 class App extends Component {
   constructor(props) {
@@ -14,24 +20,24 @@ class App extends Component {
   }
 
   componentDidMount() {
-    setTimeout(() => this.setState({ loading: false }), 1000);
+    setTimeout(() => this.setState({ loading: false }), 1500);
   }
 
   render() {
     const { loading } = this.state;
+
     return (
-      loading ?
+      loading ?      
       <Spinner/>
       :
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <Router history={history}>
+        <div>
+            <Route exact path='/' component={Signin} />
+            <Route exact path='/signin' component={Signin} />
+            <Route exact path='/signup' component={Signup} />
+            <Route path='/home' component={Homepage} />
+        </div>
+      </Router>
     );
   }
 }

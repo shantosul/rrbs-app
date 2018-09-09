@@ -1,0 +1,9 @@
+/* .login_box {
+    margin-top: 20%;
+} */
+.login_logo {
+    width: 100%;
+    max-width: 290px;
+    margin: 0 auto;
+    padding: 15px;
+}
